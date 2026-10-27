@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Huedoku · Le casse-tête des chiffres et des couleurs" data-title-en="Huedoku · The number and color logic puzzle">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huedoku · Le casse-tête des chiffres et des couleurs</title>
+  <meta name="description" content="Huedoku : un jeu de logique où chaque case porte un chiffre et une couleur. Un défi par jour, trois difficultés, sans publicité ni collecte de données.">
+  <meta name="theme-color" content="#F3F4F7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1014" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Huedoku">
+  <meta property="og:description" content="Chaque case porte un chiffre et une couleur. Un défi par jour.">
+  <meta property="og:image" content="assets/icon.png">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/lang.js"></script>
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="./" aria-label="Huedoku">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>Huedoku</span>
+    </a>
+    <button class="lang" type="button">
+      <span lang="fr">English</span><span lang="en">Français</span>
+    </button>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <h1 lang="fr">Des chiffres, des couleurs, une seule solution.</h1>
+        <h1 lang="en">Numbers, colors, one solution.</h1>
+        <p class="lead" lang="fr">Huedoku est un jeu de logique où chaque case porte un chiffre <strong>et</strong> une couleur. Remplissez la grille sans jamais répéter un chiffre, une couleur ou un duo.</p>
+        <p class="lead" lang="en">Huedoku is a logic puzzle where every cell holds a number <strong>and</strong> a color. Fill the grid without ever repeating a number, a color or a pair.</p>
+        <div class="badges">
+          <span class="badge soon" aria-disabled="true">
+            <span><small lang="fr">Bientôt sur</small><small lang="en">Coming soon to</small>App Store</span>
+          </span>
+          <span class="badge soon" aria-disabled="true">
+            <span><small lang="fr">Bientôt sur</small><small lang="en">Coming soon to</small>Google Play</span>
+          </span>
+        </div>
+        <p class="note" lang="fr">Gratuit, sans publicité, sans compte, sans collecte de données.</p>
+        <p class="note" lang="en">Free, no ads, no account, no data collection.</p>
+      </div>
+
+      <figure class="demo" style="margin:0">
+        <div class="grid" role="img" aria-label="Grille Huedoku 4 par 4 en cours de partie">
+          <div class="cell c0">1</div>
+          <div class="cell c1"></div>
+          <div class="cell">3</div>
+          <div class="cell c3">4</div>
+          <div class="cell"></div>
+          <div class="cell c3">1</div>
+          <div class="cell c0"></div>
+          <div class="cell">3</div>
+          <div class="cell c3">3</div>
+          <div class="cell sel"></div>
+          <div class="cell c1">1</div>
+          <div class="cell c0"></div>
+          <div class="cell">4</div>
+          <div class="cell c0">3</div>
+          <div class="cell"></div>
+          <div class="cell c2">1</div>
+        </div>
+        <figcaption class="demo-caption">
+          <span lang="fr">Facile · 4 × 4</span><span lang="en">Easy · 4 × 4</span>
+          <span>02:14</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <section id="regles">
+      <div class="wrap">
+        <h2 lang="fr">Trois règles, c’est tout</h2>
+        <h2 lang="en">Three rules, that’s all</h2>
+        <p class="sub" lang="fr">Si vous connaissez le sudoku, vous êtes déjà à moitié prêt. La couleur ajoute une seconde couche de déductions.</p>
+        <p class="sub" lang="en">If you know sudoku, you’re halfway there. Color adds a second layer of deductions.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="swatch" aria-hidden="true">
+              <i style="background:var(--surface);border:1px solid var(--line)">1</i><i style="background:var(--surface);border:1px solid var(--line)">2</i><i style="background:var(--surface);border:1px solid var(--line)">3</i><i style="background:var(--surface);border:1px solid var(--line)">4</i>
+            </div>
+            <div class="eyebrow" lang="fr">Règle 1</div><div class="eyebrow" lang="en">Rule 1</div>
+            <h3 lang="fr">Un chiffre par ligne et colonne</h3><h3 lang="en">One number per row and column</h3>
+            <p lang="fr">Chaque chiffre apparaît une seule fois dans chaque ligne et chaque colonne.</p>
+            <p lang="en">Each number appears once in every row and every column.</p>
+          </article>
+          <article class="card">
+            <div class="swatch" aria-hidden="true">
+              <i style="background:var(--coral)"></i><i style="background:var(--amber)"></i><i style="background:var(--teal)"></i><i style="background:var(--indigo)"></i>
+            </div>
+            <div class="eyebrow" lang="fr">Règle 2</div><div class="eyebrow" lang="en">Rule 2</div>
+            <h3 lang="fr">Une couleur par ligne et colonne</h3><h3 lang="en">One color per row and column</h3>
+            <p lang="fr">Chaque couleur apparaît une seule fois dans chaque ligne et chaque colonne.</p>
+            <p lang="en">Each color appears once in every row and every column.</p>
+          </article>
+          <article class="card">
+            <div class="swatch" aria-hidden="true">
+              <i style="background:var(--coral);color:#fff">1</i><i style="background:var(--amber);color:#16171d">2</i><i style="background:var(--teal);color:#fff">3</i><i style="background:var(--indigo);color:#fff">4</i>
+            </div>
+            <div class="eyebrow" lang="fr">Règle 3</div><div class="eyebrow" lang="en">Rule 3</div>
+            <h3 lang="fr">Chaque duo est unique</h3><h3 lang="en">Every pair is unique</h3>
+            <p lang="fr">Une même paire chiffre + couleur n’apparaît qu’une fois dans toute la grille.</p>
+            <p lang="en">A given number + color pair appears only once in the whole grid.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="daily">
+          <div>
+            <h2 lang="fr">Un défi par jour, le même pour tous</h2>
+            <h2 lang="en">One daily challenge, the same for everyone</h2>
+            <p lang="fr">Chaque jour, une nouvelle grille, plus facile en début de semaine et plus corsée le week-end. Enchaînez les jours pour faire grandir votre série.</p>
+            <p lang="en">A new grid every day, gentler early in the week and tougher at the weekend. Play day after day to grow your streak.</p>
+          </div>
+          <div class="week" aria-hidden="true">
+            <span class="done">✓</span><span class="done">✓</span><span class="done">✓</span><span class="done">✓</span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 lang="fr">Pensé pour réfléchir, pas pour deviner</h2>
+        <h2 lang="en">Made for thinking, not guessing</h2>
+        <p class="sub" lang="fr">Chaque grille a une solution unique, trouvable par la logique.</p>
+        <p class="sub" lang="en">Every grid has a single solution you can reach by logic alone.</p>
+        <div class="features">
+          <div class="feature">
+            <span class="dot" style="background:var(--coral)" aria-hidden="true"></span>
+            <div>
+              <h3 lang="fr">Trois difficultés</h3><h3 lang="en">Three difficulty levels</h3>
+              <p lang="fr">Facile en 4 × 4, moyen et difficile en 5 × 5, avec de moins en moins d’indices de départ.</p>
+              <p lang="en">Easy on 4 × 4, medium and hard on 5 × 5, with fewer and fewer starting clues.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="dot" style="background:var(--amber)" aria-hidden="true"></span>
+            <div>
+              <h3 lang="fr">Des indices qui expliquent</h3><h3 lang="en">Hints that explain</h3>
+              <p lang="fr">Un indice vous met sur la piste (« Un 3 ambre ne peut aller qu’à un seul endroit ») au lieu de remplir la case à votre place.</p>
+              <p lang="en">A hint points you to the next deduction (“An amber 3 can only go in one place”) instead of filling the cell for you.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="dot" style="background:var(--teal)" aria-hidden="true"></span>
+            <div>
+              <h3 lang="fr">Accessible</h3><h3 lang="en">Accessible</h3>
+              <p lang="fr">Un mode symboles pour les daltoniens, le thème clair ou sombre, et VoiceOver / TalkBack pris en charge.</p>
+              <p lang="en">A symbol mode for color-blind players, light or dark theme, and VoiceOver / TalkBack support.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="dot" style="background:var(--indigo)" aria-hidden="true"></span>
+            <div>
+              <h3 lang="fr">Rien que le jeu</h3><h3 lang="en">Just the game</h3>
+              <p lang="fr">Pas de publicité, pas de compte, pas de traceur. Vos statistiques restent sur votre téléphone, même hors connexion.</p>
+              <p lang="en">No ads, no account, no trackers. Your stats stay on your phone, even offline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Huedoku</span>
+      <nav>
+        <a href="privacy.html"><span lang="fr">Politique de confidentialité</span><span lang="en">Privacy policy</span></a>
+        <a href="https://github.com/paulgerold/huedoku-site/issues"><span lang="fr">Contact</span><span lang="en">Contact</span></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
